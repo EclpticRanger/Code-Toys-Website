@@ -5,7 +5,7 @@ def decode(text, sifer):
     output = ""
     for i in range(len(text)):
         tmp = ord(text[i])
-        tmp += sifer
+        tmp -= sifer
         tmp = chr(tmp)
         output += tmp
     print(output)
