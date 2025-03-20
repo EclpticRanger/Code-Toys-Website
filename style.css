@@ -32,6 +32,13 @@ button a{
     color: white;
 }
 
+.topic-title{
+    color: rgb(255, 255, 255);
+    font-size: 2em;
+    padding: 0.1em 3em;
+    background-color: rgb(12, 204, 230);
+}
+
 .nav{
     width: 100vw;
     background-color: rgb(12, 204, 230);
