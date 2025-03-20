@@ -27,7 +27,7 @@ while True:
     sifer = input()
     sifer = int(sifer)
     if sifer < 0:
-        sifer *= -1
+        sifer = sifer * -1
     if ed == "e":
         encode(text)
     elif ed == "d":

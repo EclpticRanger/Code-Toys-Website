@@ -16,8 +16,8 @@ string2 = str(string2)
 tmp = int(string2[0]) * int(string1[0])
 tmp = str(tmp)
 tmp = int(tmp[0]) + end
-print(tmp)
 if (tmp % 10) == 0:
     print("Valid")
 else:
-    print("Not Valid")
+    print("Not Valid Last Digit Should Be:")
+    print((10 - tmp) + end)
