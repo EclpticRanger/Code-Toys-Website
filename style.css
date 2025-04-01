@@ -7,7 +7,7 @@ html {
     /* The Font Family- Really important!! */
     font-family: montserrat;
     box-sizing: border-box;
-    background-color: #008cff
+    background-color: #008cff;
 }
 
 .linkbutton{
@@ -24,7 +24,7 @@ button:hover{
 }
 
 .active {
-    background-color: rgb(101, 186, 225);
+    background-color: #1570a5
 }
 
 button a{
@@ -36,12 +36,12 @@ button a{
     color: rgb(255, 255, 255);
     font-size: 2em;
     padding: 0.1em 3em;
-    background-color: rgb(12, 204, 230);
+    background-color: rgb(59, 110, 213);
 }
 
 .nav{
     width: 100vw;
-    background-color: rgb(12, 204, 230);
+    background-color: rgb(59, 110, 213);
 }
 
 
@@ -75,7 +75,7 @@ img {
     color: rgb(255, 255, 255);
     font-size: 2em;
     padding: 0.1em 3em;
-    background-color: rgb(12, 204, 230);
+    background-color: rgb(59, 110, 213);
 }
 
 .topic-subtitle{
@@ -91,7 +91,7 @@ img {
 }
 
 .footer{
-    background-color: rgb(105, 195, 202);
+    background-color: rgb(59, 110, 213);
     color: rgb(255, 255, 255);
     text-align: left;
     padding: 3em 3em;
