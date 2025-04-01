@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="scripts.js"></script>
+
     <title>Programing Toys</title>
 </head>
     <section class="hero">
@@ -13,62 +15,21 @@
         <button class ="active"><a href="index.html">Home</a></button>
     </div>
     <div class="topic-title">
-        <h1>Sifer</h1>
+        <h1>Cypher</h1>
     </div>
-<head>
-    <h2>Convert String to ASCII, Binary, and Hexadecimal</h2>
-    <p>Enter a string and click the "Convert String" button to convert the string to ASCII, binary, and hexadecimal.</p>
-    <p>Enter an integer and click the "Convert Integer" button to convert the integer to binary and hexadecimal.</p>
-    <div>
-        <label class="question" for="stringInput">Enter string to be converted:</label><br>
-        <input class="input" type="text" id="stringInput" placeholder="Enter a string">
-        <button onclick="convertString()">Convert String</button>
+    <div class="container">
+        <div class="title">Cypher Encoder/Decoder</div>
+        <textarea id="inputText" placeholder="Enter text here..."></textarea>
+        <input type="number" id="sifer" placeholder="Enter sifer value" />
+        <div class="buttons">
+            <button class="button" id="encodeButton">Encode</button>
+            <button class="button" id="decodeButton">Decode</button>
+            <button class="button" id="clearButton">Clear</button>
+        </div>
+        <script src="Code.js"></script>
+        <div class="subtitle">Output:</div>
+        <textarea id="outputText" readonly></textarea>
     </div>
-    <div class="output convert" id="stringOutput"></div>
-    <div>
-        <label class="question" for="integerInput">Enter integer to be converted:</label><br>
-        <input class="input" type="number" id="integerInput" placeholder="Enter an integer">
-        <button onclick="convertInteger()">Convert Integer</button>
-    </div>
-    <div class="output convert" id="integerOutput"></div>
-
-    <script>
-        function convertString() {
-            const string = document.getElementById("stringInput").value;
-            let ascii = "";
-            let binary = "";
-            let hexa = "";
-            for (let i = 0; i < string.length; i++) {
-                const charCode = string.charCodeAt(i);
-                ascii += charCode + " ";
-                binary += charCode.toString(2) + " ";
-                hexa += charCode.toString(16) + " ";
-            }
-
-            document.getElementById("stringOutput").innerHTML = `
-                <p><strong>ASCII:</strong> ${ascii.trim()}</p>
-                <p><strong>Binary:</strong> ${binary.trim()}</p>
-                <p><strong>Hexadecimal:</strong> ${hexa.trim()}</p>
-            `;
-        }
-        function convertInteger() {
-            const integer = parseInt(document.getElementById("integerInput").value, 10);
-
-            if (isNaN(integer)) {
-                document.getElementById("integerOutput").innerHTML = "<p>Please enter a valid integer.</p>";
-                return;
-            }
-
-            const binary = integer.toString(2);
-             const hexa = integer.toString(16);
-
-             document.getElementById("integerOutput").innerHTML = `
-                <p><strong>Binary:</strong> ${binary}</p>
-                 <p><strong>Hexadecimal:</strong> ${hexa}</p>
-            `;
-        }
-    </script>
-</head>
     <footer class="footer">
         <p>&copy; Porgraming Toys By Liam Thomas</p>
     </footer>
