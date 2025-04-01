@@ -10,7 +10,7 @@ html {
     background-image: url("images/Backround.jpg")
 }
 
-button{
+.linkbutton{
     background-color: rgb(12, 204, 230);
     padding: 0.5em 1em;
     border: none;
@@ -90,10 +90,83 @@ img {
     padding: 5px;                     
 }
 
-
 .footer{
     background-color: rgb(105, 195, 202);
     color: rgb(255, 255, 255);
     text-align: left;
     padding: 3em 3em;
+}
+
+.sifer{
+    background-color: rgb(105, 195, 202);
+    align-self: auto;
+}
+
+.input {
+    margin-top: 20px;
+    font-family: 'exantria', sans-serif;
+    background-color: rgb(105, 195, 202);
+    font-size: large;
+    color: rgb(255, 255, 255);
+}
+
+.output convert {
+    margin-top: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.question {
+    font-family: 'exantria', sans-serif;
+    font-size: large;
+}
+
+.code {
+    margin-top: 100px;
+    background-color: aqua;
+}
+
+div.output, div.convert {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #3179d1;
+    border-radius: 5px;
+    background-color: #1570a5;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+
+input.input {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+button {
+    padding: 8px 12px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+label.question {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+div.output p {
+    margin: 5px 0;
+    line-height: 1.5;
 }

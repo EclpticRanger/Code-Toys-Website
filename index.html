@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="style.css">
     <title>Programing Toys</title>
 </head>
-<body>
     <section class="hero">
         <div class="hero-text"></div>
     </section>
@@ -14,10 +13,62 @@
         <button class ="active"><a href="index.html">Home</a></button>
     </div>
     <div class="topic-title">
-        <h1>Image Creation and Editing</h1>
+        <h1>Sifer</h1>
     </div>
-    <iframe frameborder="0" src="https://itch.io/embed/3411136" width="552" height="167"><a href="https://ecliptic-ranger.itch.io/1234567891011121314151617181920">webitie ontergration by ecliptic-ranger</a></iframe>
+<head>
+    <h2>Convert String to ASCII, Binary, and Hexadecimal</h2>
+    <p>Enter a string and click the "Convert String" button to convert the string to ASCII, binary, and hexadecimal.</p>
+    <p>Enter an integer and click the "Convert Integer" button to convert the integer to binary and hexadecimal.</p>
+    <div>
+        <label class="question" for="stringInput">Enter string to be converted:</label><br>
+        <input class="input" type="text" id="stringInput" placeholder="Enter a string">
+        <button onclick="convertString()">Convert String</button>
     </div>
+    <div class="output convert" id="stringOutput"></div>
+    <div>
+        <label class="question" for="integerInput">Enter integer to be converted:</label><br>
+        <input class="input" type="number" id="integerInput" placeholder="Enter an integer">
+        <button onclick="convertInteger()">Convert Integer</button>
+    </div>
+    <div class="output convert" id="integerOutput"></div>
+
+    <script>
+        function convertString() {
+            const string = document.getElementById("stringInput").value;
+            let ascii = "";
+            let binary = "";
+            let hexa = "";
+            for (let i = 0; i < string.length; i++) {
+                const charCode = string.charCodeAt(i);
+                ascii += charCode + " ";
+                binary += charCode.toString(2) + " ";
+                hexa += charCode.toString(16) + " ";
+            }
+
+            document.getElementById("stringOutput").innerHTML = `
+                <p><strong>ASCII:</strong> ${ascii.trim()}</p>
+                <p><strong>Binary:</strong> ${binary.trim()}</p>
+                <p><strong>Hexadecimal:</strong> ${hexa.trim()}</p>
+            `;
+        }
+        function convertInteger() {
+            const integer = parseInt(document.getElementById("integerInput").value, 10);
+
+            if (isNaN(integer)) {
+                document.getElementById("integerOutput").innerHTML = "<p>Please enter a valid integer.</p>";
+                return;
+            }
+
+            const binary = integer.toString(2);
+             const hexa = integer.toString(16);
+
+             document.getElementById("integerOutput").innerHTML = `
+                <p><strong>Binary:</strong> ${binary}</p>
+                 <p><strong>Hexadecimal:</strong> ${hexa}</p>
+            `;
+        }
+    </script>
+</head>
     <footer class="footer">
         <p>&copy; Porgraming Toys By Liam Thomas</p>
     </footer>
