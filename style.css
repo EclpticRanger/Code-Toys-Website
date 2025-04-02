@@ -42,6 +42,7 @@ button a{
 .nav{
     width: 100vw;
     background-color: rgb(59, 110, 213);
+    padding: 1%;
 }
 
 
@@ -188,7 +189,7 @@ div.output p {
     background-color: #008cff;
     max-width: 80%;
     margin: 0;
-    padding: 20px;
+    padding: 40px;
     border-radius: 5px;
     color: #FFFFFF;
 }
@@ -208,4 +209,17 @@ input[type="text"], input[type="number"], select {
     padding: 10px;
     background-color: #e7f3fe;
     border-left: 6px solid #2196F3;
+}
+
+.explonation {
+    width: 80%;
+    height: 10em;
+    margin: 50px 0;
+    padding: 10px;
+    position: relative;
+    left: 50px;
+    font-size: 16px;
+    box-shadow: 0 20px 10px rgba(0, 0, 0, 0.1);;
+    background-color: rgb(59, 110, 213);
+    color: white;
 }
