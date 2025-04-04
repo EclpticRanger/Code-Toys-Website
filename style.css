@@ -10,6 +10,12 @@ html {
     background-color: #008cff;
 }
 
+.footer_object{
+    width: 100%; 
+    height: 179px; 
+    overflow: visible
+}
+
 .linkbutton{
     background-color: #2196F3
     padding 0.5em 1em;
@@ -45,13 +51,10 @@ button a{
     padding: 1%;
 }
 
-
-/* reset for images to ensure they ar 100% of the parent container width */
 img {
     width: 100%;
 }
 
-/* The hero section styling- use your OWN Hero Image URL here */
 .hero {
     background-image: url(immages/Hero.png);
     height: 25vh;
@@ -65,13 +68,11 @@ img {
     position: relative;
 }
 
-/* BIG text styling for the hero section text */
 .hero-text {
     font-size: 4em;
     font-weight: bold;
 }
 
-/* nice big font on a banner style background */
 .topic-title{
     color: rgb(255, 255, 255);
     font-size: 2em;

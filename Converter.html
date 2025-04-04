@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="Scripts/Converter.js"></script>
+    <title>Converter</title>
+    <link rel="icon" href="immages/Icon.png" type="image/x-icon">
+</head>
+<body>
+    <section class="hero">
+    </section>
+    <div class="topic-title">
+        <h1>String and Integer Converter</h1>
+    </div>
+    <div class="container">
+        <div class="title">Converter Tool</div>
+        <label for="stringInput" class="question">Enter a string to convert:</label>
+        <input class="strinput" type="text" id="stringInput" placeholder="Enter string here...">
+        <div class="buttons">
+            <button class="button" id="convertStringButton">Convert String</button>
+            <button class="button" id="clearStringButton">Clear</button>
+        </div>
+        <div class="subtitle">String Conversion Output:</div>
+        <div class="output">
+            <p id="asciiOutput">ASCII: </p>
+            <p id="binaryOutput">Binary: </p>
+            <p id="hexOutput">Hexadecimal: </p>
+        </div>
+        <label for="integerInput" class="question">Enter an integer to convert:</label>
+        <input class="strinput" type="number" id="integerInput" placeholder="Enter integer here...">
+        <div class="buttons">
+            <button class="button" id="convertIntegerButton">Convert Integer</button>
+            <button class="button" id="clearIntegerButton">Clear</button>
+        </div>
+        <div class="subtitle">Integer Conversion Output:</div>
+        <div class="output">
+            <p id="binaryIntOutput">Binary: </p>
+            <p id="hexIntOutput">Hexadecimal: </p>
+        </div>
+    </div>
+    <object class="footer_object" data="footer.html" ></object>
+</body>
+</html>
